@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const express = require('express');
 const bodyParser = require('body-parser');
 const handlebars = require('express-handlebars');
@@ -19,5 +20,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  process.stdout.write(`server listening on port ${PORT}`);
+  process.stdout.write(`server listening on port ${PORT}\n`);
 });
